@@ -1,0 +1,45 @@
+{
+  "clickable_minimum_required": "6.12.2",
+  "builder": "cmake",
+  "kill": "minetest",
+  "arch": "arm64",
+  "dependencies_target": [
+       "libsdl2-dev",
+       "libcurl4-openssl-dev",
+       "libenet-dev",
+       "libsqlite3-dev",
+       "libfribidi-dev",
+       "libxxf86vm-dev",
+       "libjpeg-dev",
+       "libogg-dev",
+       "libopenal-dev",
+       "libpng-dev",
+       "libssl-dev",
+       "libvorbis-dev",
+       "libgl1-mesa-dev",
+       "zlib1g-dev",
+       "libbluetooth-dev",
+       "libpthread-stubs0-dev",
+       "libfreetype6-dev",
+       "libirrlicht-dev"
+  ],
+  "dependencies_host": [
+       "pkg-config"
+  ],
+  "image_setup": {
+      "run": [
+          "git clone --depth 1 https://github.com/minetest/minetest_game.git games/minetest_game"
+      ]
+  },
+  "install_lib": [
+],
+  "build_args": [
+        "-DBUILD_CLIENT=TRUE",
+        "-DENABLE_FREETYPE=FALSE",
+        "-DENABLE_SOUND=ON",
+        "-DRUN_IN_PLACE=FALSE",
+        "-DENABLE_REDIS=FALSE",
+        "-DENABLE_SPATIAL=FALSE",
+        "-DVERSION_EXTRA=UBPORTS",
+  ]
+}

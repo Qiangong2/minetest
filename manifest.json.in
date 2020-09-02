@@ -1,0 +1,15 @@
+{
+    "name": "minetest.qiangong2",
+    "description": "minetest",
+    "architecture": "arm64",
+    "title": "minetest",
+    "hooks": {
+        "minetest": {
+            "apparmor": "minetest.apparmor",
+            "desktop":  "minetest.desktop"
+        }
+    },
+    "version": "5.3.0",
+    "maintainer": "Kurt S <qiangong2@126.com>",
+    "framework" : "ubuntu-sdk-16.04"
+}

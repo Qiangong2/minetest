@@ -21,7 +21,8 @@
        "libbluetooth-dev",
        "libpthread-stubs0-dev",
        "libfreetype6-dev",
-       "libirrlicht-dev"
+       "libirrlicht-dev",
+       "libbz2-dev"
   ],
   "dependencies_host": [
        "pkg-config"
@@ -40,6 +41,6 @@
         "-DRUN_IN_PLACE=FALSE",
         "-DENABLE_REDIS=FALSE",
         "-DENABLE_SPATIAL=FALSE",
-        "-DVERSION_EXTRA=UBPORTS",
+        "-DVERSION_EXTRA=UBPORTS"
   ]
 }

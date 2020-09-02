@@ -1,0 +1,7 @@
+[Desktop Entry]
+_Name=minetest
+Exec=minetest %U
+Icon=misc/minetest.svg
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

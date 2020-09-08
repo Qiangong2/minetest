@@ -2,7 +2,6 @@
   "clickable_minimum_required": "6.12.2",
   "builder": "cmake",
   "kill": "minetest",
-  "arch": "arm64",
   "dependencies_target": [
        "libsdl2-dev",
        "libcurl4-openssl-dev",
@@ -32,6 +31,13 @@
           "git clone --depth 1 https://github.com/minetest/minetest_game.git games/minetest_game"
       ]
   },
+
+  "install_data": {
+      "${ROOT}/manifest.json": "${INSTALL_DIR}",
+      "${ROOT}/minetest.apparmor": "${INSTALL_DIR}",
+      "${ROOT}/minetest.desktop": "${INSTALL_DIR}",
+      "${ROOT}/misc/minetest.svg": "${INSTALL_DIR}"
+},
   "install_lib": [
 ],
   "build_args": [

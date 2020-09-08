@@ -1,7 +1,7 @@
 {
     "name": "minetest.qiangong2",
-    "description": "minetest",
-    "architecture": "arm64",
+    "description": "Minetest for UBPorts",
+    "architecture": "@CLICK_ARCH@",
     "title": "minetest",
     "hooks": {
         "minetest": {
